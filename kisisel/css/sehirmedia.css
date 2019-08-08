@@ -1,0 +1,59 @@
+@media (max-width: 990px) {
+}
+
+/* tablet */
+@media (max-width: 768px) {
+.site{ 
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.site .sol{
+  width:200px;
+  margin-bottom: 25px;
+}
+.site .sol .sol-ust .img img{
+  width: 170px;
+  height: 170px;
+}
+.site .sag{
+  width: 500px;
+}
+.site .sag .sag-Ordu{
+    
+  width: 400px;
+}
+#slider{
+    
+  width: 400px;
+}
+.site .sag .sag-GenelBilgi{
+    
+  width: 400px;
+}
+  }
+
+/* mobile phone */
+@media (max-width: 510px) {
+  .site{ 
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .site .sol{
+    width: 100%;
+  }
+  .site .sag{
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+  .site .sol .sol-ust .img img{
+    
+    margin-left:auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+  }
+}

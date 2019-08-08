@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Tuğçe Hızır</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iletisim.css">
+    <link rel="stylesheet" href="css/sehirmedia.css">
+
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head> 
+    <body>
+      
+ <div class="site">
+    <div class="sol">
+         <div class="sol-ust">
+         <div class="img">
+             <img src="img/profil.jpg" alt="profil">
+         </div>
+         
+     </div>
+     <div class="clear"></div>
+     <div class="sol-alt">
+        <ul>
+            <li><a href="index.html">Merhaba!</a></li>
+            <li><a href="sehir.html">Şehirler</a></li>
+            <li><a href="miras.html">Mirasımız</a></li>
+            <li><a href="ozgecmis.html">Özgeçmişim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+        
+     </div>
+    </div>
+    <div class="sag">
+      <h4>LÜTFEN BİZİMLE İLETİŞİM BİLGİLERİNİZİ PAYLAŞIN!!</h4>
+        <form name="giris" action="iletisim.php" method="POST" onsubmit="return Kontrol();">
+            <div class="form-group">Adınız:  
+              <input type="text" name="ad" />
+            </div>
+            <div class="form-group"> E-Mail: 
+               <input type="text" name="email">
+            </div>
+            <div class="form-group">Şifre: 
+              <input type="password" name="sifre">
+            </div>
+            <div class="form-group">Şehir : 
+              <select name="sehir">
+            <option>Seçiniz</option>
+            <option>İstanbul</option>
+            <option>Sakarya</option>
+            <option>Ankara</option>
+            </select>
+          </div>
+            <div class="form-group">Cinsiyet: 
+              <br><input type="radio" name="cinsiyet" value="Kadın" /> Kadın
+              <input type="radio" name="cinsiyet" value="Erkek" /> Erkek
+            </div>
+            <div class="form-group">Hobileriniz: 
+             <br> <input type="checkbox" name="hobi[]" value="Muzik"/> Müzik Dinlemek
+              <input type="checkbox" name="hobi[]" value="Resim" /> Resim Yapmak
+              <input type="checkbox" name="hobi[]" value="Alisveris"/> Alışveriş Yapmak
+              <input type="checkbox" name="hobi[]" value="Film" /> Film İzlemek
+            </div>
+            <div class="form-group">Öz Geçmiş: 
+              <div>
+                <textarea name="oz_gecmis" rows="2" cols="30"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+                <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+              <div class="form-group">
+                <input type="reset" value="Temizle"></div>
+            <div class="form-group">
+              <input type="submit" namer="gonder" value="Gönder"">
+            </div>
+        </form>
+        <script type="text/javascript">
+        
+          function Kontrol(){
+              Form=document.forms['giris'];
+  
+              
+              if(Form.elements['ad'].value.length==0) alert("Lütfen isim giriniz"); //text
+              else if(Form.elements['email'].value.length==0) alert("Lütfen email giriniz"); //text
+              else if(Form.elements['email'].value.indexOf("@") < 1) alert("Lütfen dogru email giriniz");
+              else if(Form.elements['email'].value.indexOf(".com") < 1) alert("Lütfen dogru email giriniz");
+              else if(Form.elements['sifre'].value.length==0) alert("Lütfen sifre giriniz"); //text
+              else if(Form.elements['sehir'].selectedIndex<1) alert("Lütfen sehir seçiniz"); //select
+              else if(RadyoSecim==0) alert("Lütfen cinsiyet seçiniz"); //radio
+              else if(CheckSecim==0) alert("Lütfen hobilerinizi seçiniz"); //checkbox
+              else if(Form.elements['oz_gecmis'].value.length==0) alert("Lütfen öz geçmiş giriniz"); //textarea
+              else if(Form.elements['foto'].value.length==0) alert("Lütfen fotoğraf seçiniz");
+              else Form.submit();
+           
+
+          } 
+      </script>
+       
+
+
+            <div class="clear"></div>
+            <div class="footer">
+             TUĞÇE HIZIR 2019 &nbsp; KİŞİSEL BLOG
+            </div>
+</div>   
+</div>   
+</body>
+</html>

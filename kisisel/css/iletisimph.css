@@ -1,0 +1,60 @@
+.clear {
+    clear: both;
+  }
+  
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .site{
+    width:1200px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+  .site .sol{
+    width:300px;
+    display:inline-block;
+  }.site .sol .sol-ust .img img{
+    float:left;
+    width:200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-bottom: 15px;
+  }
+  .site .sol .sol-alt ul li a{
+    text-decoration: none;
+    color: #ff000a;
+    
+  }
+  .site .sol .sol-alt ul li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;  
+  }
+  .site .sag{
+    width: 900px;
+    float: right;
+    display:inline-block;
+    color:#ff000a;
+    line-height: 20px;
+  } 
+  .site .sag h5{
+      
+    color:black;
+  }
+
+
+.site .footer{
+    float:left;
+    color:#ff000a;
+    border-top: 2px solid gainsboro; 
+    margin-top:50px;
+    padding-top:15px;
+    font-size: 12px;
+    width:100%;
+  
+  }

@@ -1,0 +1,56 @@
+@media (max-width: 990px) {
+}
+
+/* tablet */
+@media (max-width: 768px) {
+.site{ 
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.site .sol{
+  width:200px;
+  margin-bottom: 25px;
+}
+.site .sol .sol-ust .img img{
+  width: 170px;
+  height: 170px;
+}
+.site .sag{
+  width: 400px;
+}
+.site .sag .sag-icerik .sag-icerik-foto img{
+  padding-top: 15px;
+}
+.site .sag .sag-icerik2 .sag-icerik-foto img{
+  padding-top: 25px;
+}
+.site .sag .sag-icerik3 .sag-icerik-foto img{
+  padding-top: 25px;
+}
+  }
+
+/* mobile phone */
+@media (max-width: 510px) {
+  .site{ 
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .site .sol{
+    width: 100%;
+  }
+  .site .sag{
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:60px;
+  }
+  .site .sol .sol-ust .img img{
+    
+    margin-left:auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+  }
+}
